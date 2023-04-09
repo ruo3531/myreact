@@ -1,13 +1,10 @@
-import React, { Component } from 'react'
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import reportWebVitals from './reportWebVitals';
+import React, { Component } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ProblemList from './ProblemList';
 import Problem from './Problem';
 import HomePage from './HomePage';
 
-function App(){
+function changePage(){
     return (
         <BrowserRouter>
           <Routes>
@@ -18,7 +15,3 @@ function App(){
         </BrowserRouter>
       );
 }
-const root = ReactDOM.createRoot(document.getElementById('root'))
-root.render(
-    <App></App>
-)
